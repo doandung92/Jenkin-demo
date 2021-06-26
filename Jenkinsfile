@@ -4,9 +4,9 @@ pipeline {
 
   stages {
     stage("build") {
-      agent any
+      agent { node {label 'master'}}
       steps {
-        sh "docker -v"
+        sh "echo 'Hello'"
       }
     }
   }
