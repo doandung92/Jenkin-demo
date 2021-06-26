@@ -6,7 +6,7 @@ pipeline {
     stage("build") {
       agent { node {label 'master'}}
       steps {
-        sh "docker-compose up -d"
+        sh "docker -v"
       }
     }
   }
