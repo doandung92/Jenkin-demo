@@ -4,6 +4,7 @@ pipeline {
 
   stages {
     stage("build") {
+      agent any
       steps {
         sh "docker -v"
       }
