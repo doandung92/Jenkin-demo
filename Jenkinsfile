@@ -4,7 +4,6 @@ pipeline {
 
   stages {
     stage("build") {
-      agent { node {label 'master'}}
       steps {
         sh "docker -v"
       }
