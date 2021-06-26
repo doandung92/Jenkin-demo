@@ -17,7 +17,7 @@ public class BackendApplication {
     @GetMapping
     @ResponseBody
     public String index() {
-        return "INDEX PAGE";
+        return "INDEX PAGE 2";
     }
 
 }
